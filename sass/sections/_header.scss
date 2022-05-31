@@ -1,0 +1,10 @@
+.header {
+    @include flex;
+    height: 100vh;
+    background-color: $dark;
+    color: white;
+
+    &_title {
+        text-align: center;
+    }
+}

@@ -1,0 +1,14 @@
+.thanks {
+    @include flex(column, center, center);
+    background-color: $dark;
+    color: white;
+    height: 100vh;
+
+    &_title {
+        text-align: center;
+    }
+
+    &_signoff {
+        text-align: center;
+    }
+}

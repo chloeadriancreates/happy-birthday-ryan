@@ -1,0 +1,17 @@
+.contribution {
+    height: 100vh;
+
+    &_media {
+        @include flex;
+        background-color: $dark;
+
+        > video {
+            border: solid 20px white;
+        }
+    }
+
+    &_descr {
+        @include flex(column, center, center);
+        background-color: $light;
+    }
+}
