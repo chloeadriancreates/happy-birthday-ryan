@@ -1,10 +1,19 @@
 .header {
-    @include flex;
+    @include flex(column, center, center);
     height: 100vh;
+    width: 100vw;
     background-color: $dark;
     color: white;
+    padding: 50px;
 
     &_title {
+        font-size: 5rem;
         text-align: center;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include under768 {
+            font-size: 3rem;
+        }
     }
 }

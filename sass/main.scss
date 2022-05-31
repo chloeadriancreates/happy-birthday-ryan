@@ -1,15 +1,14 @@
-$dark: #564787;
-$light: #BDADEA;
-
-@mixin flex($direction: row, $justify-content: center, $align-items: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify-content;
-    align-items: $align-items;
-}
+@import "./utils/mixins";
+@import "./utils/colors";
+@import "./sections/header";
+@import "./sections/next";
+@import "./sections/contribution";
+@import "./sections/thanks";
 
 * {
     box-sizing: border-box;
+    font-family: 'Francois One', sans-serif;
+    max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -21,7 +20,10 @@ body {
     margin: 0;
 }
 
-@import "./sections/header";
-@import "./sections/next";
-@import "./sections/contribution";
-@import "./sections/thanks";
+.row {
+    --bs-gutter-x: 0!important;
+}
+
+img {
+    max-width: 100%;
+}

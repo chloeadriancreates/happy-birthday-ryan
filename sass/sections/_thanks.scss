@@ -3,12 +3,30 @@
     background-color: $dark;
     color: white;
     height: 100vh;
+    width: 100vw;
+    padding: 30px;
 
     &_title {
+        font-size: 4rem;
         text-align: center;
+
+        @include under768 {
+            font-size: 3rem;
+        }
     }
 
     &_signoff {
+        margin-top: 3rem;
+        font-size: 3rem;
         text-align: center;
+
+        @include under768 {
+            font-size: 2rem;
+        }
+    }
+
+    @include under768 {
+        height: 100%;
+        padding: 50px;
     }
 }

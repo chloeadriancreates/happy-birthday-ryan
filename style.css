@@ -1,27 +1,17 @@
-* {
-  box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-}
-
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #564787;
   color: white;
+  padding: 50px;
 }
 .header_title {
+  font-size: 5rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .next {
@@ -35,12 +25,14 @@ body {
 }
 .next--light {
   color: white;
+  font-size: 2rem;
 }
 .next--dark {
   color: black;
+  font-size: 1.5rem;
 }
 .next_text {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .contribution {
@@ -54,7 +46,7 @@ body {
   background-color: #564787;
 }
 .contribution_media > video {
-  border: solid 20px white;
+  box-shadow: 10px 10px 0px 5px white;
 }
 .contribution_descr {
   display: flex;
@@ -62,6 +54,9 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #BDADEA;
+}
+.contribution_name {
+  font-size: 3rem;
 }
 
 .thanks {
@@ -78,6 +73,20 @@ body {
 }
 .thanks_signoff {
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Francois One", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
