@@ -9,11 +9,44 @@
     &_title {
         font-size: 5rem;
         text-align: center;
-        margin-bottom: 2rem;
-        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
 
         @include under768 {
             font-size: 3rem;
         }
+
+        &_line {
+            &--1 {
+                animation: header 0.5s ease 1s both;
+            }
+
+            &--2 {
+                animation: header 0.5s ease 2s both;
+            }
+
+            &--3 {
+                animation: header 0.5s ease 2.3s both;
+            }
+
+            &--4 {
+                animation: header 0.5s ease 2.6s both;
+            }
+
+            &--5 {
+                animation: header 0.5s ease 2.9s both;
+            }
+        }
+    }
+}
+
+@keyframes header {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }

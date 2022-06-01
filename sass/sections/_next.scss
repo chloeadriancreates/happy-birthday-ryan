@@ -3,15 +3,28 @@
     background: none;
     border: none;
     box-shadow: none;
+    transition: all 0.3s ease;
 
     &--light {
         color: white;
         font-size: 2rem;
+        margin-top: 2rem;
+        animation: header 0.5s ease 4s both;
+
+        &:hover, &:focus {
+            color: $light;
+            font-size: 2.4rem;
+        }
     }
 
     &--dark {
         color: black;
         font-size: 1.8rem;
+
+        &:hover, &:focus {
+            color: $dark;
+            font-size: 2.4rem;
+        }
 
         @include under768 {
             display: none;

@@ -12,15 +12,40 @@
 .header_title {
   font-size: 5rem;
   text-align: center;
-  margin-bottom: 2rem;
-  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .header_title {
     font-size: 3rem;
   }
 }
+.header_title_line--1 {
+  animation: header 0.5s ease 1s both;
+}
+.header_title_line--2 {
+  animation: header 0.5s ease 2s both;
+}
+.header_title_line--3 {
+  animation: header 0.5s ease 2.3s both;
+}
+.header_title_line--4 {
+  animation: header 0.5s ease 2.6s both;
+}
+.header_title_line--5 {
+  animation: header 0.5s ease 2.9s both;
+}
 
+@keyframes header {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .next {
   display: flex;
   flex-direction: column;
@@ -29,14 +54,25 @@
   background: none;
   border: none;
   box-shadow: none;
+  transition: all 0.3s ease;
 }
 .next--light {
   color: white;
   font-size: 2rem;
+  margin-top: 2rem;
+  animation: header 0.5s ease 4s both;
+}
+.next--light:hover, .next--light:focus {
+  color: #BDADEA;
+  font-size: 2.4rem;
 }
 .next--dark {
   color: black;
   font-size: 1.8rem;
+}
+.next--dark:hover, .next--dark:focus {
+  color: #564787;
+  font-size: 2.4rem;
 }
 @media screen and (max-width: 768px) {
   .next--dark {
@@ -202,7 +238,7 @@
   background-color: #BDADEA;
   height: 100vh;
   width: 100vw;
-  animation: loader 0.4s ease 3s both;
+  animation: loader 0.5s ease 3s both;
 }
 .loader_img {
   width: 150px;

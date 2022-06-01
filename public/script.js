@@ -8,7 +8,7 @@ setTimeout(() => {
 
 setTimeout(() => {
     loader.style.display = 'none';
-}, 3100)
+}, 4000)
 
 /* SMOOTH SCROLL */
 const toContrib1 = document.getElementById('toContrib1');
