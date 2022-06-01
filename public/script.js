@@ -1,3 +1,16 @@
+/* LOADER */
+const loader = document.getElementById('loader');
+const main = document.getElementById('main');
+
+setTimeout(() => {
+    main.style.display = 'block';
+}, 3000)
+
+setTimeout(() => {
+    loader.style.display = 'none';
+}, 3100)
+
+/* SMOOTH SCROLL */
 const toContrib1 = document.getElementById('toContrib1');
 const contrib1 = document.getElementById('contrib1');
 const toContrib2 = document.getElementById('toContrib2');

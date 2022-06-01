@@ -4,6 +4,7 @@
 @import "./sections/next";
 @import "./sections/contribution";
 @import "./sections/thanks";
+@import "./sections/loader";
 
 * {
     box-sizing: border-box;
@@ -24,6 +25,6 @@ body {
     --bs-gutter-x: 0!important;
 }
 
-img {
-    max-width: 100%;
+main {
+    display: none;
 }
